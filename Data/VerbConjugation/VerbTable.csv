@@ -1,0 +1,638 @@
+﻿id,verbo,gerund,partpasado,irregular,tipo,reflexivo,comun,trad_en
+1,abandonar,abandonando,abandonado,0,,0,1,"to abandon, leave behind, desert; to quit, give up"
+2,abordar,abordando,abordado,0,,0,0,"to board, get on [plane, bus, etc.]; to approach, accost [a person]"
+3,abortar,abortando,abortado,0,,0,0,"to abort, cause to miscarry; to have a miscarriage"
+4,abrazar,abrazando,abrazado,1,ze > ce (-zar),0,0,"to hug, embrace"
+5,abrir,abriendo,abierto,1,,0,1,to open
+6,aburrir,aburriendo,aburrido,0,,0,0,"to bore; to tire, weary"
+7,aburrirse,aburriéndose,aburrido,0,,1,1,"to get bored, become bored, be bored"
+8,abusar,abusando,abusado,0,,0,0,"to go too far, take advantage"
+9,acabar,acabando,acabado,0,,0,0,"to finish, end"
+10,acampar,acampando,acampado,0,,0,0,"to camp, encamp, go camping"
+11,aceptar,aceptando,aceptado,0,,0,0,"to accept, approve; to agree to"
+12,acercar,acercando,acercado,1,ce > que (-car),0,0,"to bring near[er], move [something] nearer"
+13,acercarse,acercándose,acercado,0,,1,0,to approach
+14,acompañar,acompañando,acompañado,0,,0,0,"to accompany, go with, escort"
+15,aconsejar,aconsejando,aconsejado,0,,0,0,to advise
+16,acontecer,aconteciendo,acontecido,1,c > zc,0,0,"to happen, occur, come about"
+17,acordar,acordando,acordado,1,o > ue,0,1,"to decide, resolve, agree [on]"
+18,acordarse,acordándose,acordado,1,o > ue,1,0,to remember
+19,acortar,acortando,acortado,0,,0,0,to shorten
+20,acostar,acostando,acostado,1,o > ue,0,1,to put to bed
+21,acostarse,acostándose,acostado,1,o > ue,1,0,"to go to bed, lie down"
+22,acostumbrar,acostumbrando,acostumbrado,0,,0,0,"to be accustomed to, be in the habit of; to get"
+23,acostumbrarse,acostumbrándose,acostumbrado,0,,1,1,"to get used to, get accustomed to"
+24,actuar,actuando,actuado,1,u > ú,0,0,"to act, perform, actuate, operate"
+25,adivinar,adivinando,adivinado,0,,0,0,"to guess, fortell, prophesy; to guess correctly"
+26,admirar,admirando,admirado,0,,0,0,"to admire, respect, look up to"
+27,admitir,admitiendo,admitido,0,,0,0,"to admit, accept, allow, recognize"
+28,adorar,adorando,adorado,0,,0,0,"to adore, worship"
+29,adornar,adornando,adornado,0,,0,0,"to adorn; to decorate, embellish; to garnish [food]"
+30,advertir,advirtiendo,advertido,1,e > ie,0,0,"to notice, observe, advise, warn"
+31,afeitar,afeitando,afeitado,0,,0,0,to shave
+32,afeitarse,afeitándose,afeitado,0,,1,0,to shave [oneself]
+33,afirmar,afirmando,afirmado,0,,0,0,"to make firm, steady, strengthen; to affirm, state, assert"
+34,afligir,afligiendo,afligido,1,g > j,0,0,"to afflict, to grieve, to pain, to distress"
+35,agorar,agorando,agorado,1,o > ue,0,0,"to predict, prophesy"
+36,agradar,agradando,agradado,0,,0,0,"to please, be pleasing"
+37,agradecer,agradeciendo,agradecido,1,c > zc,0,0,to be thankful for
+38,aguantar,aguantando,aguantado,0,,0,0,"to put up with, endure, bear, stand"
+39,ahorcar,ahorcando,ahorcado,1,ce > que (-car),0,0,to hang
+40,ahorrar,ahorrando,ahorrado,0,,0,0,to save
+41,alcanzar,alcanzando,alcanzado,1,ze > ce (-zar),0,0,"to reach, catch, catch up to, catch up with"
+42,alegrar,alegrando,alegrado,0,,0,0,"to make happy, cheer [up], gladden"
+43,alegrarse,alegrándose,alegrado,0,,1,0,"to be glad, happy; to become/get happy; to rejoice"
+44,alentar,alentando,alentado,1,e > ie,0,0,"to encourage, cheer, inspire, bolster up"
+45,aliviar,aliviando,aliviado,0,,0,0,"to alleviate, ease, lessen, lighthen, relieve"
+46,almorzar,almorzando,almorzado,1,o > ue,0,1,"to lunch, eat lunch, have lunch"
+47,alquilar,alquilando,alquilado,0,,0,1,"to rent; to rent out, let"
+48,amanecer,amaneciendo,amanecido,1,c > zc,0,0,to dawn
+49,amar,amando,amado,0,,0,1,to love
+50,amenazar,amenazando,amenazado,1,ze > ce (-zar),0,0,"to threaten, menace"
+51,añadir,añadiendo,añadido,0,,0,0,to add; to increase
+52,andar,andando,andado,1,,0,1,"to walk, go"
+53,anhelar,anhelando,anhelado,0,,0,0,"to be eager for/to, long for/to, yearn for/to"
+54,anunciar,anunciando,anunciado,0,,0,0,to announce
+55,apagar,apagando,apagado,1,g > gu (-gar),0,1,"to extinguish, put out, turn off"
+56,aparecer,apareciendo,aparecido,1,c > zc,0,0,to appear
+57,aplaudir,aplaudiendo,aplaudido,0,,0,0,"to applaud, cheer, clap"
+58,aplicar,aplicando,aplicado,1,ce > que (-car),0,0,to apply
+59,apostar,apostando,apostado,1,o > ue,0,0,"to bet, wager"
+60,apoyar,apoyando,apoyado,0,,0,0,"to support, hold up, prop up; to back"
+61,apreciar,apreciando,apreciado,0,,0,0,"to appreciate, value, esteem, estimate, notice"
+62,aprender,aprendiendo,aprendido,0,,0,0,to learn
+63,apretar,apretando,apretado,1,e > ie,0,0,to be too tight; to squeeze; to tighten [up]; to press [down/against]
+64,aprobar,aprobando,aprobado,1,o > ue,0,0,to pass
+65,arreglar,arreglando,arreglado,0,,0,1,"to arrange, settle, fix up, repair, tidy up"
+66,arrepentirse,arrepintiéndose,arrepentido,1,e > i,1,0,"to repent, be repentant, regret"
+67,arrojar,arrojando,arrojado,0,,0,0,"to throw, hurl, cast, toss"
+68,asistir,asistiendo,asistido,0,,0,0,to attend
+69,asociar,asociando,asociado,0,,0,0,"to associate; to pool, put together"
+70,aspirar,aspirando,aspirado,0,,0,0,"to breath in, inhale; to suck in; to aspirate; to aspire"
+71,asustar,asustando,asustado,0,,0,0,"to frighten, scare, startle"
+72,asustarse,asustándose,asustado,0,,1,0,to be frightened [oneself]
+73,atacar,atacando,atacado,1,ce > que (-car),0,0,to attack
+74,atender,atendiendo,atendido,1,e > ie,0,0,"to attend to, pay attention to"
+75,atraer,atrayendo,atraído,1,,0,0,"to attract, draw, lure"
+76,atravesar,atravesando,atravesado,1,e > ie,0,0,"to cross, cross over, go across, go over, pass through"
+77,atreverse,atreviéndose,atrevido,0,,1,0,to dare
+78,aumentar,aumentando,aumentado,0,,0,0,"to increase, add to, augment; to be on the increase, rise"
+79,avanzar,avanzando,avanzado,1,ze > ce (-zar),0,0,"to advance, move forward"
+80,averiguar,averiguando,averiguado,0,,0,0,"to find out, discover"
+81,avisar,avisando,avisado,0,,0,0,"to warn, inform, notify"
+82,ayudar,ayudando,ayudado,0,,0,1,to help
+83,bailar,bailando,bailado,0,,0,1,d a n c e
+84,bajar,bajando,bajado,0,,0,0,"to lower, go down, descend, download"
+85,bañar,bañando,bañado,0,,0,0,to give a bath
+86,bañarse,bañándose,bañado,0,,1,0,"to take a bath, bathe [oneself]"
+87,barrer,barriendo,barrido,0,,0,0,"to sweep, sweep clean, sweep out, sweep away"
+88,batir,batiendo,batido,0,,0,0,"to beat, hammer, pound [on]"
+89,bautizar,bautizando,bautizado,1,ze > ce (-zar),0,0,"to baptize, christen"
+90,beber,bebiendo,bebido,0,,0,1,to drink
+91,bendecir,bendiciendo,bendito,1,e > i,0,0,"to bless, foretell, forecast"
+92,besar,besando,besado,0,,0,0,k i s s
+93,bordar,bordando,bordado,0,,0,0,to embroider
+94,borrar,borrando,borrado,0,,0,0,"to erase, rub out, to cross out, obliterate, wipe out"
+95,brillar,brillando,brillado,0,,0,0,"to shine, sparkle, glitter, gleam"
+96,brindar,brindando,brindado,0,,0,0,to toast
+97,broncearse,bronceándose,bronceado,0,,1,0,"to get a suntan, tan"
+98,bucear,buceando,buceado,0,,0,0,to skin-dive; to dive under water; to dive
+99,burlar,burlando,burlado,0,,0,0,"to deceive, trick; to seduce"
+100,burlarse,burlándose,burlado,0,,1,1,"to mock, ridicule, make fun of [someone/something]"
+101,buscar,buscando,buscado,1,ce > que (-car),0,1,"to search for, look for"
+102,caber,cabiendo,cabido,1,e > ie,0,1,to fit
+103,caer,cayendo,caído,1,,0,1,to fall
+104,calcular,calculando,calculado,0,,0,0,"to calculate, compute, add up"
+105,calentar,calentando,calentado,1,e > ie,0,1,"to heat [up], warm [up]"
+106,calentarse,calentándose,calentado,1,e > ie,1,0,"to heat up, warm up"
+107,callar,callando,callado,0,,0,0,"to keep quiet about, pass over in silence; to hush"
+108,callarse,callándose,callado,0,,1,1,"to keep quiet , be quiet, shut up, be silent, remain silent"
+109,calmar,calmando,calmado,0,,0,0,"to calm (down), quiet, soothe"
+110,calmarse,calmándose,calmado,0,,1,0,to calm down [oneself]
+111,caminar,caminando,caminado,0,,0,1,"to walk, go"
+112,cancelar,cancelando,cancelado,0,,0,0,"to cancel; to wipe out, write off [debt]"
+113,cansar,cansando,cansado,0,,0,0,"to tire, tire out, fatigue, wear out"
+114,cansarse,cansándose,cansado,0,,1,0,"to get tired, get worn out, get weary"
+115,caracterizar,caracterizando,caracterizado,1,ze > ce (-zar),0,0,to characterize
+116,cargar,cargando,cargado,1,g > gu (-gar),0,0,"to load, load up; to charge"
+117,casar,casando,casado,0,,0,0,"to marry, join in marriage, join in wedlock"
+118,casarse,casándose,casado,0,,1,0,"to marry [someone], get married [to someone]"
+119,castigar,castigando,castigado,1,g > gu (-gar),0,0,"to punish, penalize, castigate"
+120,causar,causando,causado,0,,0,0,"to cause; to create, make"
+121,cazar,cazando,cazado,1,ze > ce (-zar),0,0,"to hunt, represent, stand for"
+122,celebrar,celebrando,celebrado,0,,0,0,"to celebrate; to praise, applaud"
+123,cenar,cenando,cenado,0,,0,1,"to eat supper, have supper; to eat dinner, have dinner; to dine; to have for supper [or dinner]"
+124,censurar,censurando,censurado,0,,0,0,"to censor; to censure, criticize, blame"
+125,cepillar,cepillando,cepillado,0,,0,0,to brush
+126,cerrar,cerrando,cerrado,1,e > ie,0,1,"to close, shut"
+127,cesar,cesando,cesado,0,,0,0,"to cease, stop"
+128,charlar,charlando,charlado,0,,0,0,"to chat, talk"
+129,chismear,chismeando,chismeado,0,,0,0,to gossip
+130,chocar,chocando,chocado,1,ce > que (-car),0,0,"to shock; to startle; to be suprising, startling; to collide, crash"
+131,civilizar,civilizando,civilizado,1,ze > ce (-zar),0,0,to civilize
+132,clarificar,clarificando,clarificado,1,ce > que (-car),0,0,"to clarify, illuminate, light [up], brighten"
+133,clasificar,clasificando,clasificado,1,ce > que (-car),0,0,"to classify, grade, rate, sort"
+134,cobrar,cobrando,cobrado,0,,0,0,"to charge [a price]; to cash [a check]; to collect, receive [an amount]"
+135,cocinar,cocinando,cocinado,0,,0,1,to cook; to do the cooking
+136,coger,cogiendo,cogido,0,,0,1,"to catch, grasp, take hold of"
+137,colgar,colgando,colgado,1,o > ue,0,0,"to hang, hang up, be hanging, be suspended"
+138,colocar,colocando,colocado,1,ce > que (-car),0,0,"to locate, place"
+139,colonizar,colonizando,colonizado,1,ze > ce (-zar),0,0,"to colonize, settle"
+140,combatir,combatiendo,combatido,0,,0,0,"to combat, fight, oppose; to attack"
+141,comenzar,comenzando,comenzado,1,e > ie,0,1,"to begin, start, commence"
+142,comer,comiendo,comido,0,,0,1,to eat
+143,compartir,compartiendo,compartido,0,,0,0,to share; to divide [up]
+144,competir,compitiendo,competido,1,e > i,0,0,to compete
+145,componer,componiendo,compuesto,1,o > ue,0,0,"to compose, make up, put together"
+146,comprar,comprando,comprado,0,,0,1,"to buy, purchase"
+147,comprender,comprendiendo,comprendido,0,,0,0,"to understand, comprehend"
+148,comunicar,comunicando,comunicado,1,ce > que (-car),0,0,"to communicate, transmit, tell, pass on"
+149,comunicarse,comunicándose,comunicado,1,ce > que (-car),1,0,"to communicate [e.g., with someone], be in touch, correspond; to be transmitted"
+150,condenar,condenando,condenado,0,,0,0,"to condemn, convict, sentence"
+151,conducir,conduciendo,conducido,1,c > zc,0,0,"to drive, conduct"
+152,confesar,confesando,confesado,1,e > ie,0,0,to confess
+153,confiar,confiando,confiado,1,i > í,0,0,"to trust, be trusting, entrust"
+154,confirmar,confirmando,confirmado,0,,0,0,"to confirm, corroborate, endorse"
+155,confiscar,confiscando,confiscado,1,ce > que (-car),0,0,to confiscate
+156,conjugar,conjugando,conjugado,1,g > gu (-gar),0,0,to conjugate
+157,conocer,conociendo,conocido,1,c > zc,0,1,to know
+158,conquistar,conquistando,conquistado,0,,0,0,"to conquer, overcome, win"
+159,conseguir,consiguiendo,conseguido,1,e > i,0,0,"to get, obtain"
+160,consentir,consintiendo,consentido,1,e > i,0,0,"to consent to; to allow, permit; to tolerate, put up with; to admit; to agree, consent"
+161,conservar,conservando,conservado,0,,0,0,"to preserve, conserve; to keep, retain"
+162,consistir,consistiendo,consistido,0,,0,0,"to consist [of], be composed [of]"
+163,constituir,constituyendo,constituido,0,,0,0,to constitute
+164,construir,construyendo,construido,0,,0,0,"to build, construct"
+165,consumir,consumiendo,consumido,0,,0,0,"to consume, eat, use upe"
+166,contaminar,contaminando,contaminado,0,,0,0,"to contaminate, pollute; to corrupt"
+167,contar,contando,contado,1,o > ue,0,1,"to count, relate, tell"
+168,contener,conteniendo,contenido,1,e > ie,0,0,"to contain, hold"
+169,contestar,contestando,contestado,0,,0,1,to answer
+170,continuar,continuando,continuado,1,u > ú,0,1,to continue
+171,contribuir,contribuyendo,contribuido,0,,0,0,to contribute
+172,controlar,controlando,controlado,0,,0,0,"to control; to inspect, check"
+173,convencer,convenciendo,convencido,0,,0,0,to convince
+174,convenir,conviniendo,convenido,1,e > i,0,0,"to agree; to suit, be suited to; to be good for"
+175,conversar,conversando,conversado,0,,0,0,"to talk, converse; to tell, relate"
+176,convertir,convirtiendo,convertido,1,e > i,0,0,to convert
+177,convidar,convidando,convidado,0,,0,0,to invite
+178,copiar,copiando,copiado,0,,0,0,to copy
+179,corregir,corrigiendo,corregido,1,"e > i, g > j",0,0,to correct
+180,correr,corriendo,corrido,0,,0,1,to run
+181,cortar,cortando,cortado,0,,0,0,to cut
+182,coser,cosiendo,cosido,0,,0,0,"to sew, sew up; to stitch, stitch up"
+183,costar,costando,costado,1,o > ue,0,0,to cost
+184,crear,creando,creado,0,,0,0,to create; to make
+185,crecer,creciendo,crecido,1,c > zc,0,0,to grow [up]
+186,creer,creyendo,creído,1,,0,1,to believe
+187,criar,criando,criado,1,i > í,0,0,to raise
+188,criarse,criándose,criado,1,i > í,1,0,to grow [up]; to be brought up
+189,criticar,criticando,criticado,1,ce > que (-car),0,0,to criticize
+190,crucificar,crucificando,crucificado,1,ce > que (-car),0,0,to crucify
+191,cruzar,cruzando,cruzado,1,ze > ce (-zar),0,0,to cross
+192,cubrir,cubriendo,cubierto,0,,0,0,to cover
+193,cuidar,cuidando,cuidado,0,,0,1,"to take care of, look after"
+194,culpar,culpando,culpado,0,,0,0,"to blame, accuse; to condemn"
+195,cultivar,cultivando,cultivado,0,,0,0,to cultivate; to grow
+196,cumplir,cumpliendo,cumplido,0,,0,0,"to fulfil, carry out; to reach ["
+197,curar,curando,curado,0,,0,0,"to cure; to treat, dress [a wound]"
+198,dar,dando,dado,1,,0,1,to give
+199,deber,debiendo,debido,0,,0,1,"to owe; must, should, ought to"
+200,decidir,decidiendo,decidido,0,,0,0,"to decide, settle, resolve"
+201,decidirse,decidiéndose,decidido,0,,1,0,"to decide, make up one's mind"
+202,decir,diciendo,dicho,1,e > i,0,1,"to say, tell"
+203,declarar,declarando,declarado,0,,0,0,"to declare, state; to bid [in cards]"
+204,decorar,decorando,decorado,0,,0,0,"to decorate, adorn"
+205,dedicar,dedicando,dedicado,1,ce > que (-car),0,0,to dedicate
+206,dedicarse,dedicándose,dedicado,0,,1,0,"to devote oneself, dedicate oneself, go in for, take up [carrer/interest in something]"
+207,defender,defendiendo,defendido,1,e > ie,0,0,to defend
+208,dejar,dejando,dejado,0,,0,1,"to leave, abandon; to let, allow"
+209,demostrar,demostrando,demostrado,1,o > ue,0,0,"to demonstrate, show"
+210,depender,dependiendo,dependido,0,,0,0,to depend
+211,depositar,depositando,depositado,0,,0,0,"to deposit; to place; to put away, store"
+212,deprimir,deprimiendo,deprimido,0,,0,0,"to depress, press down, flatten"
+213,derretir,derritiendo,derretido,1,e > i,0,0,"to melt, liquefy, thaw"
+214,desagradar,desagradando,desagradado,0,,0,0,"to displease, be displeasing"
+215,desagradecer,desagradeciendo,desagradecido,1,c > zc,0,0,"to be unthankful for, to be unappreciative of"
+216,desaparecer,desapareciendo,desaparecido,1,c > zc,0,0,to disappear
+217,desarrollar,desarrollando,desarrollado,0,,0,0,"to develop, expand; to unroll, unwind; to unfold"
+218,desarrollarse,desarrollándose,desarrollado,0,,1,0,"to develop, evolve; to unwind"
+219,desayunar,desayunando,desayunado,0,,0,0,"to eat breakfast, have breakfast"
+220,descansar,descansando,descansado,0,,0,1,"to rest, take a rest; to support, lean [on"
+221,descender,descendiendo,descendido,1,e > ie,0,0,"to descend, lower"
+222,describir,describiendo,descrito,0,,0,0,to describe
+223,descubrir,descubriendo,descubierto,0,,0,0,to discover
+224,desear,deseando,deseado,0,,0,0,"to desire, want, wish"
+225,deshacer,deshaciendo,deshecho,1,,0,1,"to undo, unmake, ruin, spoil, take apart"
+226,despedir,despidiendo,despedido,1,e > i,0,0,"to say goodbye to, show out, dismiss"
+227,despertar,despertando,despertado,1,e > ie,0,0,to awaken
+228,despertarse,despertándose,despertado,1,e > ie,1,0,"to wake up, lie down"
+229,destruir,destruyendo,destruido,0,,0,0,to destroy
+230,detener,deteniendo,detenido,1,e > ie,0,0,"to stop; to hold up, delay; to arrest, detain"
+231,detenerse,deteniéndose,detenido,1,,1,0,"to stop, pause, linger"
+232,detestar,detestando,detestado,0,,0,0,"to detest, hate"
+233,devolver,devolviendo,devuelto,1,o > ue,0,0,"to return, give back"
+234,devorar,devorando,devorado,0,,0,0,"to devour, eat up, gobble up"
+235,dibujar,dibujando,dibujado,0,,0,0,"to draw, sketch, depict"
+236,dirigir,dirigiendo,dirigido,1,g > j,0,0,to direct
+237,diseñar,diseñando,diseñado,0,,0,0,to design
+238,disfrutar,disfrutando,disfrutado,0,,0,0,to enjoy
+239,disgustar,disgustando,disgustado,0,,0,0,"to displease, be displeasing; to annoy, upset"
+240,disminuir,disminuyendo,disminuido,0,,0,0,"to diminish, decrease"
+241,distinguir,distinguiendo,distinguido,0,,0,0,"to distinguish, discern, make out, recognize, single out"
+242,distribuir,distribuyendo,distribuido,0,,0,0,"to distribute, hand out, send out, give out"
+243,divertir,divirtiendo,divertido,1,e > i,0,0,"to amuse, entertain"
+244,divertirse,divirtiéndose,divertido,1,e > i,1,0,"to have fun, have a good time, enjoy oneself"
+245,divorciar,divorciando,divorciado,0,,0,0,to divorce
+246,divorciarse,divorciándose,divorciado,0,,1,0,to get divorced [from somebody]
+247,doblar,doblando,doblado,0,,0,0,"to double; to turn [a corner, to the right, etc.]; to fold, crease"
+248,doler,doliendo,dolido,1,impersonal; o > ue,0,0,"to hurt, pain, ache"
+249,dormir,durmiendo,dormido,1,o > ue,0,1,to sleep
+250,dormirse,durmiéndose,dormido,1,o > ue,1,0,"to go to sleep, fall asleep"
+251,duchar,duchando,duchado,0,,0,0,to douche
+252,ducharse,duchándose,duchado,0,,1,1,"to take a shower, shower [oneself]"
+253,dudar,dudando,dudado,0,,0,0,to doubt
+254,durar,durando,durado,0,,0,0,"to last, go on, continue"
+255,echar,echando,echado,0,,0,1,"to throw, cast, fling, hurl, pitch, toss"
+256,echarse,echándose,echado,0,,1,0,"to throw, fling, hurl [oneself]"
+257,educar,educando,educado,1,ce > que (-car),0,0,to educate; to bring up
+258,efectuar,efectuando,efectuado,1,u > ú,0,0,"to effect, carry out, bring about"
+259,ejercer,ejerciendo,ejercido,0,,0,0,"to exercise, wield [power, influence, etc.]; to practice [a profession]; to manage, conduct [a businsess]"
+260,elegir,eligiendo,elegido,1,"e > i, g > j",0,0,"to elect, choose"
+261,eliminar,eliminando,eliminado,0,,0,0,"to eliminate, remove, get rid of"
+262,emborrachar,emborrachando,emborrachado,0,,0,0,"to make drunk, intoxicate; to get [someone] drunk"
+263,emborracharse,emborrachándose,emborrachado,0,,1,0,"to get drunk, become drunk"
+264,emigrar,emigrando,emigrado,0,,0,0,to emigrate; to migrate
+265,empezar,empezando,empezado,1,e > ie,0,1,"to begin, start"
+266,emplear,empleando,empleado,0,,0,0,"to employ, hire; to use"
+267,enamorar,enamorando,enamorado,0,,0,0,"to inspire love in, win the love of"
+268,enamorarse,enamorándose,enamorado,0,,1,0,to fall in love
+269,encantar,encantando,encantado,0,,0,0,"to delight, be delighting, charm, enchant"
+270,encender,encendiendo,encendido,1,e > ie,0,0,"to burn, light, turn on"
+271,encontrar,encontrando,encontrado,1,o > ue,0,1,"to find, encounter"
+272,enfadar,enfadando,enfadado,0,,0,0,"to anger, irritate, annoy"
+273,enfadarse,enfadándose,enfadado,0,,1,0,"to get angry, get irratated, get annoyed"
+274,enfermar,enfermando,enfermado,0,,0,0,"to make ill, make sick, cause illness in"
+275,enfermarse,enfermándose,enfermado,0,,1,0,"to get sick, become ill, fall ill. become sick"
+276,enflaquecer,enflaqueciendo,enflaquecido,1,c > zc,0,0,"to make thin, make weak, weaken"
+277,enflaquecerse,enflaqueciéndose,enflaquecido,1,,1,0,to get thin; lose weight; to grow weak
+278,engañar,engañando,engañado,0,,0,0,"to deceive, cheat, trick, swindle"
+279,enojar,enojando,enojado,0,,0,0,"to anger, upset, annoy; to make angry"
+280,enojarse,enojándose,enojado,0,,1,1,"to get angry, get upset, lose one's temper"
+281,enriquecer,enriqueciendo,enriquecido,1,c > zc,0,0,"to enrich, make rich"
+282,enriquecerse,enriqueciéndose,enriquecido,1,,1,0,to get rich
+283,enseñar,enseñando,enseñado,0,,0,0,"to teach, instruct, train, educate"
+284,ensuciar,ensuciando,ensuciado,0,,0,0,to dirty
+285,entender,entendiendo,entendido,1,e > ie,0,1,to understand
+286,enterarse,enterándose,enterado,0,,1,0,"to find out [about something], to learn [of something])"
+287,entrar,entrando,entrado,0,,0,0,"to enter, go in, come in"
+288,entregar,entregando,entregado,1,g > gu (-gar),0,0,"to deliver, hand over"
+289,entretener,entreteniendo,entretenido,1,e > ie,0,0,"to entertain, amuse"
+290,entrevistar,entrevistando,entrevistado,0,,0,0,to interview
+291,entusiasmar,entusiasmando,entusiasmado,0,,0,0,to excite; to fill with excitement [or enthusiasm]
+292,entusiasmarse,entusiasmándose,entusiasmado,0,,1,0,"to get excited, become excited [filled with excitement or enthusiasm]"
+293,envejecer,envejeciendo,envejecido,1,c > zc,0,0,"to age, make old, grow old, get old"
+294,envejecerse,envejeciéndose,envejecido,1,,1,0,"to get old, age"
+295,enviar,enviando,enviado,1,i > í,0,1,to send
+296,equivocar,equivocando,equivocado,1,ce > que (-car),0,0,to mistake
+297,equivocarse,equivocándose,equivocado,0,,1,0,to make a mistake
+298,errar,errando,errado,0,,0,0,"to err, make an error"
+299,escoger,escogiendo,escogido,0,,0,1,"to choose, select, pick"
+300,esconder,escondiendo,escondido,0,,0,0,"to hide, conceal"
+301,esconderse,escondiéndose,escondido,0,,1,0,"to hide [oneself], be hidden"
+302,escribir,escribiendo,escrito,0,,0,1,to write
+303,escuchar,escuchando,escuchado,0,,0,1,"to listen to, hear"
+304,esperar,esperando,esperado,0,,0,1,t o hope
+305,esquiar,esquiando,esquiado,1,i > í,0,0,to ski
+306,establecer,estableciendo,establecido,1,c > zc,0,0,to establish
+307,estar,estando,estado,1,,0,1,to be
+308,estimar,estimando,estimado,0,,0,0,"to estimate; to appraise; to esteem, respect"
+309,estudiar,estudiando,estudiado,0,,0,0,to study
+310,evacuar,evacuando,evacuado,0,,0,0,"to evacuate, empty"
+311,evitar,evitando,evitado,0,,0,0,to avoid; to prevent
+312,exhibir,exhibiendo,exhibido,0,,0,0,"to exhibit, show, display"
+313,exigir,exigiendo,exigido,1,g > j,0,0,"to demand, require"
+314,explicar,explicando,explicado,1,ce > que (-car),0,0,to explain
+315,explorar,explorando,explorado,0,,0,0,to explore; to pioneer
+316,explotar,explotando,explotado,0,,0,0,to exploit; to explode
+317,exponer,exponiendo,expuesto,1,,0,0,to expose
+318,exportar,exportando,exportado,0,,0,0,to export
+319,expresar,expresando,expresado,0,,0,0,"to express, voice, state"
+320,extender,extendiendo,extendido,1,e > ie,0,0,to extend
+321,extinguir,extinguiendo,extinguido,0,,0,0,"to extinguish, put out"
+322,fabricar,fabricando,fabricado,1,ce > que (-car),0,0,to manufacture
+323,faltar,faltando,faltado,0,,0,1,"to lack, be lacking, be missing, be absent"
+324,fascinar,fascinando,fascinado,0,,0,0,"to fascinate, captivate"
+325,felicitar,felicitando,felicitado,0,,0,0,to congratulate
+326,fijar,fijando,fijado,0,,0,0,"to fix, fasten, secure"
+327,fingir,fingiendo,fingido,1,g > j,0,0,"to fake, feign, pretend"
+328,firmar,firmando,firmado,0,,0,0,to sign
+329,florecer,floreciendo,florecido,1,c > zc,0,0,"to flourish, flower, bloom"
+330,formar,formando,formado,0,,0,0,"to form, shape, fashion, make"
+331,fortalecer,fortaleciendo,fortalecido,1,c > zc,0,0,"to fortify, strenthen"
+332,freír,friendo,frito,1,e > i,0,0,to fry
+333,fumar,fumando,fumado,0,,0,0,to smoke
+334,funcionar,funcionando,funcionado,0,,0,0,"to function; to run, work"
+335,ganar,ganando,ganado,0,,0,1,"to win, gain, earn, get, acquire"
+336,gastar,gastando,gastado,0,,0,1,"to spend, expend; to use up, consume; to wear away, wear down"
+337,generalizar,generalizando,generalizado,1,ze > ce (-zar),0,0,to generalize
+338,glorificar,glorificando,glorificado,1,ce > que (-car),0,0,"to glorify, praise"
+339,gobernar,gobernando,gobernado,1,e > ie,0,0,to govern
+340,graduar,graduando,graduado,1,u > ú,0,0,to graduate
+341,graduarse,graduándose,graduado,0,,1,0,to graduate
+342,gritar,gritando,gritado,0,,0,1,"to shout, yell, scream, cry out"
+343,gruñir,gruñendo,gruñido,0,,0,0,"to grunt, growl"
+344,guardar,guardando,guardado,0,,0,1,"to guard, watch over, protect, take care of; to keep, hold on to; to put away, store away"
+345,guiar,guiando,guiado,1,i > í,0,0,to guide
+346,gustar,gustando,gustado,0,,0,1,"to please, be pleasing"
+347,hablar,hablando,hablado,0,,0,1,to speak
+348,hacer,haciendo,hecho,1,,0,1,"to do, make"
+349,hallar,hallando,hallado,0,,0,0,to find; to discover; to locate; to find out
+350,hallarse,hallándose,hallado,0,,1,0,"to be, to find oneself; to be located, found"
+351,helar,helando,helado,1,e > ie,0,0,"to freeze, to congeal, to chill"
+352,heredar,heredando,heredado,0,,0,0,to inherit
+353,herir,hiriendo,herido,1,e > ie,0,0,"to injure, hurt, wound; to beat, strike"
+354,hervir,hirviendo,hervido,1,e > i,0,0,"to boil, entertain"
+355,huir,huyendo,huido,0,,0,0,"to flee, run away"
+356,ilustrar,ilustrando,ilustrado,0,,0,0,"to illustrate, explain, make clear"
+357,importar,importando,importado,0,,0,0,to import
+358,imprimir,imprimiendo,"imprimido, impreso",0,,0,0,to print
+359,incluir,incluyendo,incluido,0,,0,1,to include
+360,indicar,indicando,indicado,1,ce > que (-car),0,0,to indicate
+361,inducir,induciendo,inducido,1,c > zc,0,0,to induce
+362,influir,influyendo,influido,0,,0,0,to influence
+363,informar,informando,informado,0,,0,0,"to inform, tell, announce"
+364,iniciar,iniciando,iniciado,0,,0,0,"to initiate, begin, start"
+365,inmigrar,inmigrando,inmigrado,0,,0,0,to immigrate
+366,insistir,insistiendo,insistido,0,,0,0,to insist
+367,instalar,instalando,instalado,0,,0,0,"to install; to set up, erect"
+368,insultar,insultando,insultado,0,,0,0,to insult
+369,intentar,intentando,intentado,0,,0,1,"to try, attempt"
+370,interesar,interesando,interesado,0,,0,0,"to interest, be of interest [to]"
+371,interpretar,interpretando,interpretado,0,,0,0,to interpret; to translate
+372,introducir,introduciendo,introducido,1,c > zc,0,0,"to introduce, insert"
+373,invadir,invadiendo,invadido,0,,0,0,"to invade, overrun"
+374,inventar,inventando,inventado,0,,0,0,to invent
+375,invertir,invirtiendo,invertido,1,e > i,0,0,to invest
+376,investigar,investigando,investigado,1,g > gu (-gar),0,0,to investigate
+377,invitar,invitando,invitado,0,,0,0,to invite
+378,invocar,invocando,invocado,1,ce > que (-car),0,0,to invoke
+379,ir,yendo,ido,1,,0,1,to go
+380,irse,yéndose,ido,1,,1,1,"to go away, leave, depart"
+381,jactarse,jactándose,jactado,0,,1,0,"to boast, brag"
+382,jugar,jugando,jugado,1,u > ue,0,1,to play
+383,juntar,juntando,juntado,0,,0,0,"to join, unite, put together, assemble"
+384,juntarse,juntándose,juntado,0,,1,0,"to join, come together, gather together, meet"
+385,jurar,jurando,jurado,0,,0,0,to swear
+386,ladrar,ladrando,ladrado,0,,0,0,to bark
+387,lamentar,lamentando,lamentado,0,,0,0,"to lament, regret, feel sorry about"
+388,lanzar,lanzando,lanzado,1,ze > ce (-zar),0,0,"to throw, hurl, cast, fling"
+389,lastimar,lastimando,lastimado,0,,0,0,"to hurt, injure, harm; to pity; to move to pity"
+390,lavar,lavando,lavado,0,,0,0,to wash
+391,lavarse,lavándose,lavado,0,,1,0,"to wash [oneself], to wash up"
+392,leer,leyendo,leído,1,,0,1,to read
+393,legalizar,legalizando,legalizado,1,ze > ce (-zar),0,0,"to legalize, make lawful"
+394,levantar,levantando,levantado,0,,0,1,"to raise, to lift"
+395,levantarse,levantándose,levantado,0,,1,0,to get up
+396,limpiar,limpiando,limpiado,0,,0,1,to clean
+397,llamar,llamando,llamado,0,,0,1,"to call, to name"
+398,llamarse,llamándose,llamado,0,,1,0,"to be called, be named"
+399,llegar,llegando,llegado,1,g > gu (-gar),0,1,"to arrive, come, reach; to bring up, bring over; to gather together"
+400,llenar,llenando,llenado,0,,0,0,to fill; to fulfill
+401,llevar,llevando,llevado,0,,0,1,"to carry, bring"
+402,llorar,llorando,llorado,0,,0,0,"to cry, weep; to weep for/about, cry about, lament"
+403,llover,lloviendo,llovido,1,impersonal; o > ue,0,1,to rain
+404,lograr,logrando,logrado,0,,0,1,"to get, obtain; to achieve, attain"
+405,luchar,luchando,luchado,0,,0,0,"to fight, struggle; to wrestle"
+406,madurar,madurando,madurado,0,,0,0,to mature; to ripen
+407,mandar,mandando,mandado,0,,0,0,to order
+408,manejar,manejando,manejado,0,,0,1,to drive
+409,mantener,manteniendo,mantenido,1,e > ie,0,0,"to maintain, get"
+410,maquillar,maquillando,maquillado,0,,0,0,to put make-up on
+411,maquillarse,maquillándose,maquillado,0,,1,0,to put on make-up [on oneself]
+412,marcar,marcando,marcado,1,ce > que (-car),0,0,"to mark, stamp, to show, indicate; to dial [e.g., a phone]"
+413,masticar,masticando,masticado,1,ce > que (-car),0,0,to chew
+414,matar,matando,matado,0,,0,1,"to kill, slay, slaughter"
+415,matricular,matriculando,matriculado,0,,0,0,to register
+416,matricularse,matriculándose,matriculado,0,,1,0,"to register, enroll, matriculate [oneself]"
+417,medir,midiendo,medido,1,e > i,0,0,"to measure, be"
+418,mentir,mintiendo,mentido,1,e > i,0,1,to lie
+419,merecer,mereciendo,merecido,1,c > zc,0,0,"to deserve, merit"
+420,merendar,merendando,merendado,1,e > ie,0,0,"to have a[n afternoon] snack, have as a snack"
+421,meter,metiendo,metido,0,,0,1,"to put [in], place, insert"
+422,mezclar,mezclando,mezclado,0,,0,0,"to mix, mix up, mix together, blend; to combine, merge, shuffle"
+423,mirar,mirando,mirado,0,,0,1,"to watch, look at"
+424,modificar,modificando,modificado,1,ce > que (-car),0,0,"to modify, change"
+425,molestar,molestando,molestado,0,,0,1,"to bother, annoy, inconovenience, put out, upset"
+426,montar,montando,montado,0,,0,0,"to mount, to get on, to ride"
+427,morir,muriendo,muerto,1,o > ue,0,0,to die
+428,mostrar,mostrando,mostrado,1,o > ue,0,0,to show
+429,mover,moviendo,movido,1,o > ue,0,0,to move
+430,moverse,moviéndose,movido,1,o > ue,1,0,to move [oneself]
+431,mudar,mudando,mudado,0,,0,0,"to change, alter; to move"
+432,mudarse,mudándose,mudado,0,,1,0,to move [=change residence]
+433,nacer,naciendo,nacido,1,c > zc,0,0,to be born
+434,nadar,nadando,nadado,0,,0,0,to swim
+435,navegar,navegando,navegado,1,g > gu (-gar),0,0,"to navigate, sail"
+436,necesitar,necesitando,necesitado,0,,0,1,"to need, require"
+437,negar,negando,negado,1,e > ie,0,0,"to deny, refuse"
+438,negarse,negándose,negado,1,e > ie,1,0,to refuse
+439,negociar,negociando,negociado,0,,0,0,to negotiate
+440,nevar,nevando,nevado,1,impersonal; e > ie,0,0,to snow
+441,notar,notando,notado,0,,0,0,"to note, notice, observe"
+442,obedecer,obedeciendo,obedecido,1,c > zc,0,0,to obey
+443,obligar,obligando,obligado,1,g > gu (-gar),0,0,to oblige
+444,obtener,obteniendo,obtenido,1,e > ie,0,0,"to obtain, get"
+445,ocurrir,ocurriendo,ocurrido,1,impersonal,0,0,"to occur, happen"
+446,odiar,odiando,odiado,0,,0,0,to hate
+447,ofender,ofendiendo,ofendido,0,,0,0,to offend
+448,ofrecer,ofreciendo,ofrecido,1,c > zc,0,0,to offer
+449,oír,oyendo,oído,1,,0,1,to hear
+450,oler,oliendo,olido,1,o > ue,0,1,to smell
+451,olvidar,olvidando,olvidado,0,,0,1,to forget
+452,olvidarse,olvidándose,olvidado,0,,1,0,to forget
+453,oponer,oponiendo,opuesto,1,o > ue,0,0,"to pit [A against B], set up [A in opposition to B], play off [A against B]"
+454,oponerse,oponiéndose,opuesto,1,o > ue,1,0,to put on [clothing]; to put/place [oneself]; to turn/get/become
+455,organizar,organizando,organizado,1,ze > ce (-zar),0,0,to organize
+456,padecer,padeciendo,padecido,1,c > zc,0,0,to suffer
+457,pagar,pagando,pagado,1,g > gu (-gar),0,1,"to pay, pay for"
+458,parar,parando,parado,0,,0,1,"to stop, halt"
+459,parecer,pareciendo,parecido,1,c > zc,0,1,"to seem, appear"
+460,participar,participando,participado,0,,0,0,"to participate, take part in; to share in; to inform, notify"
+461,pasar,pasando,pasado,0,,0,1,"to pass, pass by, go; to pass on, hand; to spend [time]; to happen"
+462,patinar,patinando,patinado,0,,0,0,"to skate; to slide, skid"
+463,pedir,pidiendo,pedido,1,e > i,0,1,"to request, ask for"
+464,pegar,pegando,pegado,1,g > gu (-gar),0,0,"to stick, glue, hit"
+465,peinar,peinando,peinado,0,,0,0,to comb
+466,peinarse,peinándose,peinado,0,,1,0,to comb one's hair; to do one's hair
+467,pelear,peleando,peleado,0,,0,0,"to fight; to brawl, scruffle"
+468,pensar,pensando,pensado,1,e > ie,0,0,to think
+469,perder,perdiendo,perdido,1,e > ie,0,0,to lose
+470,perdonar,perdonando,perdonado,0,,0,0,"to forgive, pardon, excuse"
+471,permanecer,permaneciendo,permanecido,1,c > zc,0,0,"to stay, remain"
+472,permitir,permitiendo,permitido,0,,0,0,"to permit, allow"
+473,perseguir,persiguiendo,perseguido,1,e > i,0,0,"to pursue, chase, hunt down"
+474,pertenecer,perteneciendo,pertenecido,1,c > zc,0,0,"to belong, pertain"
+475,pesar,pesando,pesado,0,,0,0,"to weigh; to weigh down, weigh heavily;"
+476,pescar,pescando,pescado,1,ce > que (-car),0,0,to fish
+477,picar,picando,picado,1,ce > que (-car),0,0,"to prick, puncture, perforate; to sting, bite"
+478,pintar,pintando,pintado,0,,0,0,to paint
+479,planchar,planchando,planchado,0,,0,0,"to iron, press; to do the ironing"
+480,plantar,plantando,plantado,0,,0,0,to plant
+481,platicar,platicando,platicado,1,ce > que (-car),0,0,"to chat, talk"
+482,poder,pudiendo,podido,1,o > ue,0,1,"to be able, can"
+483,poner,poniendo,puesto,1,o > ue,0,1,"to put, place, set"
+484,ponerse,poniéndose,puesto,1,o > ue,1,1,to put on [clothing]; to put/place [oneself]; to turn/get/become
+485,practicar,practicando,practicado,1,ce > que (-car),0,1,to practice
+486,predecir,prediciendo,predicho,1,e > i,0,0,"to predict, foretell, forecast"
+487,preferir,prefiriendo,preferido,1,e > i,0,0,to prefer
+488,preguntar,preguntando,preguntado,0,,0,1,"to ask, inquire"
+489,preguntarse,preguntándose,preguntado,0,,1,0,"to wonder, ask oneself"
+490,preparar,preparando,preparado,0,,0,0,"to prepare, get"
+491,prepararse,preparándose,preparado,0,,1,0,to get
+492,presentar,presentando,presentado,0,,0,0,t o i n t r o d u c e
+493,presentir,presintiendo,presentido,1,e > i,0,0,to have a premonition of
+494,preservar,preservando,preservado,0,,0,0,"to preserve, protect"
+495,prever,previendo,previsto,1,e > ie,0,0,"to foresee, anticipate, envisage, visualize"
+496,probar,probando,probado,1,o > ue,0,1,"to taste, try, test"
+497,producir,produciendo,producido,1,,0,0,to produce
+498,prohibir,prohibiendo,prohibido,0,,0,0,"to prohibit, forbid"
+499,prometer,prometiendo,prometido,0,,0,0,to promise
+500,proponer,proponiendo,propuesto,1,o > ue,0,0,to propose
+501,proseguir,prosiguiendo,proseguido,1,e > i,0,0,"to continue, proceed with"
+502,proteger,protegiendo,protegido,0,,0,0,to protect
+503,protestar,protestando,protestado,0,,0,0,to protest
+504,provocar,provocando,provocado,1,ce > que (-car),0,0,to provoke
+505,publicar,publicando,publicado,1,ce > que (-car),0,0,to publish
+506,purificar,purificando,purificado,1,ce > que (-car),0,0,to purify
+507,quebrar,quebrando,quebrado,1,e > ie,0,0,"to break, smash; to fail, go bankrupt"
+508,quebrarse,quebrándose,quebrado,1,e > ie,1,0,"to break, smash, get broken"
+509,quedar,quedando,quedado,0,,0,1,"to stay, remain, be left; to be [indicating location]"
+510,quedarse,quedándose,quedado,0,,1,1,"to stay [behind], remain [behind]"
+511,quejarse,quejándose,quejado,0,,1,0,to complain
+512,quemar,quemando,quemado,0,,0,1,"to burn [up], set on fire, scald, scorch; to be burning hot"
+513,quemarse,quemándose,quemado,0,,1,0,"to burn [oneself], to burn up, burn down"
+514,querer,queriendo,querido,1,e > ie,0,1,"to want, love"
+515,realizar,realizando,realizado,1,ze > ce (-zar),0,0,"to achieve, attain, accomplish, realize"
+516,rechazar,rechazando,rechazado,1,ze > ce (-zar),0,0,"to reject; to push back, repel"
+517,recibir,recibiendo,recibido,0,,0,0,"to receive; to welcome, greet"
+518,reciclar,reciclando,reciclado,0,,0,0,to recycle; to retrain [a person]
+519,recoger,recogiendo,recogido,0,,0,1,to pick up
+520,recomendar,recomendando,recomendado,1,e > ie,0,0,to recommend
+521,reconocer,reconociendo,reconocido,1,c > zc,0,0,to recognize
+522,recordar,recordando,recordado,1,o > ue,0,0,"to remember, remind"
+523,reducir,reduciendo,reducido,1,c > zc,0,0,to reduce
+524,regalar,regalando,regalado,0,,0,1,"to give [as a gift]; to present; to give away; to treat royally, pamper"
+525,regar,regando,regado,1,e > ie,0,0,"to water, irrigate, wash, sprinkle, spray"
+526,regatear,regateando,regateado,0,,0,0,"to haggle (over), bargain (over)"
+527,regir,rigiendo,regido,1,"e > i, g > j",0,0,"to rule, govern, be in charge of, be at the head of"
+528,registrar,registrando,registrado,0,,0,0,"to register, record; to search"
+529,registrarse,registrándose,registrado,0,,1,0,to register [oneself]
+530,regresar,regresando,regresado,0,,0,1,"to return, go back"
+531,regular,regulando,regulado,0,,0,0,"to regulate, adjust, control"
+532,rehusar,rehusando,rehusado,0,,0,0,to refuse
+533,reinar,reinando,reinado,0,,0,0,"to reign, rule"
+534,reír,riendo,reído,1,e > i,0,1,to laugh
+535,renacer,renaciendo,renacido,1,c > zc,0,0,to be reborn
+536,reñir,riñendo,reñido,1,e > i,0,0,"to quarrel, fight; to scold, tell off, reprimand"
+537,renovar,renovando,renovado,1,o > ue,0,0,to renew; to renovate
+538,renunciar,renunciando,renunciado,0,,0,0,"to renounce, surrender, resign"
+539,reparar,reparando,reparado,0,,0,0,"to repair, mend, restore"
+540,repasar,repasando,repasado,0,,0,0,"to review, go over again; to do again"
+541,repetir,repitiendo,repetido,1,e > i,0,1,to repeat
+542,replicar,replicando,replicado,1,ce > que (-car),0,0,"to reply, answer back"
+543,reportar,reportando,reportado,0,,0,0,"to bring, carry; to obtain; to report, inform; to denounce, accuse"
+544,requerir,requiriendo,requerido,1,e > i,0,0,"to require, need; to request, ask; to send for, call for"
+545,reservar,reservando,reservado,0,,0,0,"to reserve; to keep, keep in reserve"
+546,resolver,resolviendo,resuelto,1,o > ue,0,0,"to solve, resolve"
+547,respetar,respetando,respetado,0,,0,0,to respect
+548,respirar,respirando,respirado,0,,0,0,"to breathe, breathe in, inhale"
+549,responder,respondiendo,respondido,0,,0,0,"to respond, answer, reply to"
+550,resultar,resultando,resultado,0,,0,0,"to turn out (to be), prove [to be], ensue"
+551,revelar,revelando,revelado,0,,0,0,"to reveal, disclose; to develop [film]"
+552,rezar,rezando,rezado,1,ze > ce (-zar),0,0,to pray
+553,robar,robando,robado,0,,0,0,"to rob, steal, burgle, break into"
+554,rogar,rogando,rogado,1,o > ue,0,0,"to plead, beg, ask for"
+555,romper,rompiendo,roto,0,,0,1,to break
+556,saber,sabiendo,sabido,1,e > i,0,1,to know
+557,sacar,sacando,sacado,1,ce > que (-car),0,1,"to take out, stick out"
+558,sacrificar,sacrificando,sacrificado,1,ce > que (-car),0,0,to sacrifice
+559,sacudir,sacudiendo,sacudido,0,,0,0,"to shake, beat, flap"
+560,salir,saliendo,salido,1,,0,1,"to leave, go out"
+561,saltar,saltando,saltado,0,,0,1,"to jump, leap; to jump over, leap over; to omit, skip, leave out"
+562,saludar,saludando,saludado,0,,0,1,"to greet, salute, hail, welcome"
+563,salvar,salvando,salvado,0,,0,0,"to save, rescue; to except, exclude"
+564,satirizar,satirizando,satirizado,1,ze > ce (-zar),0,0,to satirize
+565,satisfacer,satisfaciendo,satisfecho,1,,0,0,to satisfy
+566,secar,secando,secado,1,ce > que (-car),0,0,"to dry, dry up, dry off, wipe dry"
+567,secarse,secándose,secado,1,ce > que (-car),1,0,"to dry, dry off, dry up"
+568,seguir,siguiendo,seguido,1,e > i,0,1,"to follow, continue"
+569,señalar,señalando,señalado,0,,0,0,"to point out, point to, indicate; to signal; to mark"
+570,sentar,sentando,sentado,1,e > ie,0,0,"to seat, sit"
+571,sentarse,sentándose,sentado,1,e > ie,1,1,"to sit down, seat oneself"
+572,sentir,sintiendo,sentido,1,"e > i, e > ie",0,1,"to feel, regret"
+573,sentirse,sintiéndose,sentido,1,"e > i, e > ie",1,1,to feel
+574,ser,siendo,sido,1,,0,1,to be
+575,servir,sirviendo,servido,1,e > i,0,0,to serve
+576,significar,significando,significado,1,ce > que (-car),0,1,"to signify, mean"
+577,simbolizar,simbolizando,simbolizado,1,ze > ce (-zar),0,0,"to symbolize, represent, stand for"
+578,situar,situando,situado,1,u > ú,0,0,"to place, put, situate"
+579,sobrevivir,sobreviviendo,sobrevivido,0,,0,0,"to survive, outlive, outlast"
+580,soler,soliendo,solido,1,o > ue,0,0,"to be accustomed to, be accustomed to"
+581,sonar,sonando,sonado,1,o > ue,0,0,to sound; to ring
+582,soñar,soñando,soñado,1,o > ue,0,0,to dream
+583,sonreír,sonriendo,sonreído,1,e > i,0,0,to smile
+584,soportar,soportando,soportado,0,,0,0,"to support, hold up, bear; to put up with, tolerate"
+585,sorprender,sorprendiendo,sorprendido,0,,0,0,"to surprise, take by surprise, startle, amaze"
+586,subir,subiendo,subido,0,,0,1,"to go up, rise, move up, climb; to lift up, raise up"
+587,suceder,sucediendo,sucedido,0,,0,0,"to happen; to succeed, follow"
+588,sufrir,sufriendo,sufrido,0,,0,0,"to suffer; to undergo, experience, put up with"
+589,sugerir,sugiriendo,sugerido,1,,0,0,to suggest
+590,suponer,suponiendo,supuesto,1,o > ue,0,1,to suppose
+591,surgir,surgiendo,surgido,1,g > j,0,0,"to arise, emerge, spring up, come out, appear"
+592,suspirar,suspirando,suspirado,0,,0,0,to sigh
+593,sustituir,sustituyendo,sustituido,0,,0,0,"to substitute, replace"
+594,tañer,tañendo,tañido,0,,0,0,to play
+595,tapar,tapando,tapado,0,,0,0,"to cover; to put the lid on, put the cap on, put the stopper in"
+596,tardar,tardando,tardado,0,,0,0,"to delay, take a long time, be long, be slow [in doing something]"
+597,temer,temiendo,temido,0,,0,0,to fear
+598,tener,teniendo,tenido,1,e > ie,0,1,to have
+599,teñir,tiñendo,teñido,1,e > i,0,0,"to dye, tint, tinge, color, stain"
+600,terminar,terminando,terminado,0,,0,0,"to finish, end"
+601,tirar,tirando,tirado,0,,0,1,"to throw, hurl; to shoot, fire; to throw away; to pull [out]"
+602,tocar,tocando,tocado,1,ce > que (-car),0,1,to touch; to play
+603,tomar,tomando,tomado,0,,0,1,"to take, drink"
+604,torcer,torciendo,torcido,1,o > ue,0,0,"to twist, bend, warp, wring, sprain"
+605,toser,tosiendo,tosido,0,,0,0,to cough
+606,trabajar,trabajando,trabajado,0,,0,1,to work
+607,traducir,traduciendo,traducido,1,c > zc,0,0,to translate
+608,traer,trayendo,traído,1,,0,1,"to bring; to get, fetch; to carry"
+609,tragar,tragando,tragado,1,g > gu (-gar),0,0,"to swallow, drink up, gulp down; to absorb, soak up; to put up with"
+610,tratar,tratando,tratado,0,,0,1,"to treat, handle"
+611,triunfar,triunfando,triunfado,0,,0,0,"to triumph, win"
+612,tropezar,tropezando,tropezado,1,e > ie,0,0,"to trip, stumble, slip up"
+613,ubicar,ubicando,ubicado,1,ce > que (-car),0,1,"to place, locate; to be located, be situated"
+614,unir,uniendo,unido,0,,0,0,"to unite, join; to tie together; to merge"
+615,untar,untando,untado,0,,0,0,"to anoint; to smear, rub"
+616,usar,usando,usado,0,,0,0,to use
+617,utilizar,utilizando,utilizado,1,ze > ce (-zar),0,1,"to use, utilize"
+618,vaciar,vaciando,vaciado,0,,0,0,to empty
+619,valer,valiendo,valido,1,,0,0,to be worth
+620,variar,variando,variado,1,i > í,0,0,to vary
+621,vencer,venciendo,vencido,0,,0,0,"to conquer, defeat, beat, overcome, win; to expire, cease to apply"
+622,vender,vendiendo,vendido,0,,0,1,to sell
+623,venir,viniendo,venido,1,e > i,0,1,to come
+624,ver,viendo,visto,1,e > ie,0,1,to see
+625,verificar,verificando,verificado,1,ce > que (-car),0,1,"to verify, check, inspect"
+626,vestir,vistiendo,vestido,1,e > i,0,0,to dress
+627,vestirse,vistiéndose,vestido,1,e > i,1,0,"to get dressed, dress"
+628,viajar,viajando,viajado,0,,0,1,"to travel, journey"
+629,violar,violando,violado,0,,0,0,to violate; to rape
+630,visitar,visitando,visitado,0,,0,0,to visit
+631,vivir,viviendo,vivido,0,,0,1,to live
+632,volar,volando,volado,1,o > ue,0,0,to fly
+633,volver,volviendo,vuelto,1,o > ue,0,1,"to return, go back"
+634,vomitar,vomitando,vomitado,0,,0,0,"to vomit, throw up, bring up"
+635,votar,votando,votado,0,,0,0,to vote
+636,yacer,yaciendo,yacido,1,,0,0,to lie
+637,zambullirse,zambulléndose,zambullido,0,,1,0,"to dive, plunge"
