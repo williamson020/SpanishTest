@@ -1,0 +1,126 @@
+//EN~ES
+sensible (adj)~sensato
+abandon (v)~abandonar
+abandon~desamparar
+abandoned~abandonado/a
+abandonment~abandono
+abbreviation~abreviación\ciones
+abbreviation~abreviatura
+abbreviation~sigla
+abdicate (v)~abdicar
+abdication~abdicación\ciones
+abdomen~abdomen
+abdominal~abdominal
+aberration~aberración\ciones
+able~capaz\paces
+able~hábil
+abnormal~anormal
+abnormality~anormalidad
+abolish (v)~abolir
+abolition~abolición\ciones
+abominable~abominable
+abomination~abominación\ciones
+aborigine~aborigen\rígenes
+abort (v)~abortar
+abortion~aborto
+about~acerca de
+about~alrededor
+about~consiste
+about~en torno a
+abrupt~brusco/a
+absence~ausencia
+absolute~absoluto/a
+absolutely~absolutamente
+absolve (v)~absolver
+absorb (v)~absorber
+absorbed~absorto/a
+absorbent~absorbente
+absorption~absorción\ciones
+abstain~abstenerse
+abstention~abstención\ciones
+abstinence~abstinencia
+abstract (v)~abstraer
+abstract~abstracto/a
+abstracted~abstraído\da
+abstraction~abstracción\ciones
+absurd~absurdo/a
+abundance~abundancia
+abundant~abundante
+abuse (v)~abusar
+abuse~abuso
+abusive~abusivo/a
+abyss~abismo
+academic~académico/a(n)
+academy~academia(nf)
+accelerate (v)~acelerar
+accent mark~tilde
+accent~acento
+accentuate (v)~acentuar
+accept (v)~aceptar
+acceptable~aceptable
+acceptance~aceptación\ciones
+access~acceso
+accessible~accesible
+accessory~accesorio
+accident~accidente
+accidental~accidental
+acclaim (v)~aclamar
+acclaim~aclamación\ciones
+acclimate (v)~aclimatar
+acclimatization~aclimatación\ciones
+accommodated~acomodado/a
+accompaniment~acompañamiento
+accompany (v)~acompañar
+accomplice~cómplice
+accomplish (v)~cumplir
+accomplishment~realización\ciones
+according to~según
+accordion~acordeón\deones
+accost~abordar
+accountant~contador/dora
+accounting~contabilidad
+accredit (v)~acreditar
+accredited~acreditado/a
+accumulate (v)~acumular
+accumulate (v)~amontonar
+accumulated~acaudalado/a
+accumulation~acumulación\ciones
+accurate~acertado/a
+accusation~acusación\ciones
+accuse (v)~acusar
+accuse (v)~inculpar
+accused~reo/rea
+accustom (v)~acostumbrar
+accustomed~acostumbrado/a
+acetone~acetona
+achieve(v)~lograr
+acid~ácido/a
+acidity~acidez\deces
+acne~acné
+acoustics~acústica
+acoustics~acústico/a
+acquire (v)~adquirir
+acquisition~adquisición\ciones
+acrobat~acróbata
+acrobatic~acrobático/a
+acrobatics~acrobacia
+across~a través de
+acrylic~acrílico
+act (v)~actuar
+act~acta
+act~acto
+development~desarrollo(nm.)
+establish/set up(v)~establecer
+achieve/accomplish(v)~lograr
+wet (adj.)~mojado/mojada
+wrapping/package~envoltorio(nm)
+film~película(nf)
+teaching/education/lesson~enseñanza(nf)
+halt(v)~hacer alto
+place/site~paraje(nm)
+
+
+
+
+
+
