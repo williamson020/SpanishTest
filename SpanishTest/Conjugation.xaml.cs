@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +12,19 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace SpanishTest
 {
 
-    public class VerbTableEntry
+    public class VerbTableEntry : INotifyPropertyChanged
     {
-        public VerbTableEntry(string person, string pr, string im, string pret, string cond, string fut)
+        private VerbTableEntry _master;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public VerbTableEntry(string person, string pr, string im, string pret, string cond, string fut, bool createcopy=false)
         {
             Person = person;
 
@@ -28,14 +35,50 @@ namespace SpanishTest
             Future = fut;
 
             SetFlags();
+
+            if (createcopy)
+                _master = new VerbTableEntry(person, pr, im, pret, cond, fut);
         }
 
-        public VerbTableEntry(VerbTableEntry x)
+
+        // This method is called by the Set accessor of each property.  
+        // The CallerMemberName attribute that is applied to the optional propertyName  
+        // parameter causes the property name of the caller to be substituted as an argument.  
+        private void NotifyPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] String propertyName = "")
         {
-            Person = x.Person;
-
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        private  bool Match(string s1, string s2)
+        {
+            return (String.Compare(s1, s2, CultureInfo.CurrentCulture, CompareOptions.IgnoreNonSpace) == 0);
+        }
+
+        public bool PresentMatch
+        {
+            get { return _master == null ? false : Match(_master.Present , Present); }
+        }
+
+        public bool FutureMatch
+        {
+            get { return _master == null ? false : Match(_master.Future , Future); }
+        }
+
+        public bool PreteriteMatch
+        {
+            get { return _master == null ? false : Match(_master.Preterite, Preterite); }
+        }
+
+
+        public bool ImperfectMatch
+        {
+            get { return _master == null ? false : Match(_master.Imperfect, Imperfect); }
+        }
+
+        public bool ConditionalMatch
+        {
+            get { return _master == null ? false : Match(_master.Conditional, Conditional); }
+        }
 
         public string Person{ get;  set; }
         public string Present { get;  set; }
@@ -85,6 +128,9 @@ namespace SpanishTest
     {
 
         private Verb _theVerb;
+
+        private ObservableCollection<VerbTableEntry> _tableSource;
+
         public Conjugation(Verb v)
         {
             InitializeComponent();
@@ -92,24 +138,38 @@ namespace SpanishTest
             VerbDataGrid.CellEditEnding += myDG_CellEditEnding;
         }
 
-        
+        protected  void OnExecutedCommitEdit(System.Windows.Input.ExecutedRoutedEventArgs e)
+        {
+        }
+
+            //protected virtual void OnExecutedCommitEdit(System.Windows.Input.ExecutedRoutedEventArgs e);
 
         private void myDG_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
         {
             if (e.EditAction == DataGridEditAction.Commit)
             {
+                
+
                 var column = e.Column as DataGridBoundColumn;
 
                 if (column != null)
                 {
                     var bindingPath = (column.Binding as Binding).Path.Path;
-                    if (bindingPath == "Present")
+
+                    //if (bindingPath == "Present")
                     {
                         int rowIndex = e.Row.GetIndex();
                         var el = e.EditingElement as TextBox;
                         // rowIndex has the row index
                         // bindingPath has the column's binding
                         // el.Text has the new, user-entered value
+
+                        FrameworkElement fe = e.Column.GetCellContent(e.Row);
+                        VerbTableEntry item = (VerbTableEntry)fe.DataContext;
+                        item.Present = el.Text;
+
+                        if (!item.PresentMatch)
+                            ((TextBox)fe).Background = Brushes.PaleVioletRed;
 
                         rowIndex++;
                         if (rowIndex > 5)
@@ -123,9 +183,16 @@ namespace SpanishTest
                         //VerbDataGrid.SelectedCells.Add(cInfo);
 
                         //Set keyboard focus to same
-                        DataGridCell cell = DGUtil.GetCell(VerbDataGrid, rowIndex, column.DisplayIndex);
+                       
                         //Keyboard.Focus(cell);
 
+                        VerbDataGrid.ItemsSource = null;
+
+                        VerbDataGrid.ItemsSource = _tableSource
+                        ;
+                        //VerbDataGrid.Dispatcher.BeginInvoke(new Action(() => VerbDataGrid.Items.Refresh()), System.Windows.Threading.DispatcherPriority.Background);
+
+                        DataGridCell cell = DGUtil.GetCell(VerbDataGrid, rowIndex, column.DisplayIndex);
                         if (cell != null)
                         {
                             cell.IsSelected = true;
@@ -140,8 +207,9 @@ namespace SpanishTest
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            _tableSource = LoadTable();
 
-            VerbDataGrid.ItemsSource = LoadTable();
+            VerbDataGrid.ItemsSource = _tableSource;
 
             //Keyboard.Focus(GetDataGridCell(VerbDataGrid.SelectedCells[0]));
 
@@ -164,7 +232,7 @@ namespace SpanishTest
 
        
 
-        private List<VerbTableEntry> LoadTable()
+        private ObservableCollection<VerbTableEntry> LoadTable()
         {
             //Present
             //Preterite
@@ -175,15 +243,16 @@ namespace SpanishTest
             _theVerb.Lookup(Verb.Mode.Indicativo, Verb.Tense.Presente);
 
 
-            var lst = new List<VerbTableEntry>();
+            var lst = new ObservableCollection<VerbTableEntry>
+            {
+                MakeEntry("yo", 0),
+                MakeEntry("tú", 1),
+                MakeEntry("él/ella/Ud.", 2),
 
-            lst.Add(MakeEntry("yo", 0));
-            lst.Add(MakeEntry("tú", 1));
-            lst.Add(MakeEntry("él/ella/Ud.", 2));
-
-            lst.Add(MakeEntry("nosotros", 3));
-            lst.Add(MakeEntry("nosotros", 4));
-            lst.Add(MakeEntry("éllos/ellas/Uds.",5));
+                MakeEntry("nosotros", 3),
+                MakeEntry("nosotros", 4),
+                MakeEntry("éllos/ellas/Uds.", 5)
+            };
 
 
             return lst;
@@ -199,7 +268,7 @@ namespace SpanishTest
 
             
 
-            return new VerbTableEntry(person, pr, im, pret,cond,fut);
+            return new VerbTableEntry(person, pr, im, pret,cond,fut,true); //creates a master copy
         }
 
         private void btnDone_Click(object sender, RoutedEventArgs e)

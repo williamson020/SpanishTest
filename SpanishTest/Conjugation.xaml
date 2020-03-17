@@ -17,6 +17,29 @@
                 <DataTrigger Binding="{Binding PresentIsRegular}" Value="False">
                     <Setter Property="Foreground" Value="Red"/>
                 </DataTrigger>
+                <DataTrigger Binding="{Binding PresentMatch}" Value="False">
+                    <Setter Property="Background" Value="Gray"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding PresentMatch}" Value="True">
+                    <Setter Property="Background" Value="LightYellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="TextBox" x:Key="PresentCellStyleTextBox">
+            <Setter Property="Foreground" Value="Black"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding PresentIsRegular}" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding PresentIsRegular}" Value="False">
+                    <Setter Property="Foreground" Value="Red"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding PresentMatch}" Value="False">
+                    <Setter Property="Background" Value="Gray"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding PresentMatch}" Value="True">
+                    <Setter Property="Background" Value="LightYellow"/>
+                </DataTrigger>
             </Style.Triggers>
         </Style>
     </Window.Resources>
@@ -26,7 +49,7 @@
                 Name="Mode" VerticalAlignment="Top" Width="200"  />
 
         <DataGrid FontFamily="Georgia" FontSize="18" Height="250" Width="800" HorizontalAlignment="Left" Margin="12,50,0,0" 
-          Name="VerbDataGrid" VerticalAlignment="Top" RowHeight="25" ColumnWidth="100" 
+          Name="VerbDataGrid" VerticalAlignment="Top" RowHeight="25"  ColumnWidth="100" 
                   ColumnHeaderHeight="50" HeadersVisibility="Column"
                   Background="LightYellow" RowBackground="LightYellow" SelectionUnit="Cell" IsSynchronizedWithCurrentItem="True"
                   BorderBrush="Gray" BorderThickness="1" AutoGenerateColumns="False"
@@ -50,8 +73,9 @@
                 <DataGridTextColumn 
                 Header="Present"
                 Width="130"
+                
                 CellStyle="{StaticResource PresentCellStyle}"
-                Binding="{Binding Present}" >
+                Binding="{Binding Present, Mode=TwoWay}" >
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextWrapping" Value="Wrap"/>
