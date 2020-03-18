@@ -21,10 +21,10 @@ namespace SpanishTest
     /// </summary>
     public partial class MainWindow : Window
     {
-        TestManager tm;
+        TestManager _tm;
 
         private bool AddWordActive { get; set; }
-       
+
 
         public MainWindow()
         {
@@ -40,8 +40,8 @@ namespace SpanishTest
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            tm = new TestManager(this, TestPath);
-            tm.Start();
+            _tm = new TestManager(this, TestPath);
+            _tm.Start();
             tbLookup.Visibility = Visibility.Hidden;
 
             tbDefnLabel.Visibility = Visibility.Hidden;
@@ -55,7 +55,7 @@ namespace SpanishTest
             CommandManager.RegisterClassCommandBinding(typeof(Window), cb);
         }
 
-        
+
         private void TranslationsMode(object sender, ExecutedRoutedEventArgs e)
         {
             e.Handled = true;
@@ -77,8 +77,8 @@ namespace SpanishTest
 
         internal void TestModeChange()
         {
-            tbSourceMode.Text = tm.ModeToString;
-           Update(tm.NextQuestion());
+            tbSourceMode.Text = _tm.ModeToString;
+            Update(_tm.NextQuestion());
         }
 
 
@@ -93,7 +93,7 @@ namespace SpanishTest
             if (dlg.ShowDialog().Value)
             {
                 //Set phrase source
-                tm.ChangeMode(TestManager.Mode.FileSourcePhrases, null, dlg.FileSource);
+                _tm.ChangeMode(TestManager.Mode.FileSourcePhrases, null, dlg.FileSource);
             }
             e.Handled = true;
         }
@@ -101,7 +101,7 @@ namespace SpanishTest
         private void VerbFinder(object sender, ExecutedRoutedEventArgs e)
         {
 
-            VerbFinderDlg dlg = new VerbFinderDlg(tm)
+            VerbFinderDlg dlg = new VerbFinderDlg(_tm)
             {
                 Owner = this,
                 WindowStartupLocation = WindowStartupLocation.CenterOwner
@@ -109,7 +109,7 @@ namespace SpanishTest
 
             if (dlg.ShowDialog().Value)
             {
-                tm.ChangeMode(TestManager.Mode.NamedVerbPhrases, dlg.Selection);
+                _tm.ChangeMode(TestManager.Mode.NamedVerbPhrases, dlg.Selection);
             }
 
             e.Handled = true;
@@ -125,7 +125,25 @@ namespace SpanishTest
         public static string TestPath
         {
             get { return ConfigurationManager.AppSettings["test_path"]; }
+        }
 
+        public static string[] VerbFavourites
+        {
+            get { return ConfigurationManager.AppSettings["verb_favourites"].Split(','); }
+
+            set
+            {
+                string csv = "";
+                foreach(var s in value)
+                {
+                    if (!String.IsNullOrEmpty(csv))
+                        csv += ",";
+
+                    csv += s;
+
+                }
+                ConfigurationManager.AppSettings["verb_favourites"] = csv;
+            }
         }
 
         private void Update(TestQuestion q)
@@ -147,7 +165,7 @@ namespace SpanishTest
             else
             {
                 BLOCK1.Text = q.InfoBlock();
-                BLOCK2.Text = q.MainBlock(tm.TestLanguage);
+                BLOCK2.Text = q.MainBlock(_tm.TestLanguage);
             }
         }
 
@@ -169,30 +187,30 @@ namespace SpanishTest
                 BLOCK1A.Text = q.InfoBlock();
                 BLOCK_GEROUND.Text = q.Gerund;
                 BLOCK_PASTPARTICPLE.Text = q.PastParticiple;
-                BLOCK2.Text = q.MainBlock(tm.TestLanguage);
+                BLOCK2.Text = q.MainBlock(_tm.TestLanguage);
             }
         }
 
         private void NextQuestion_Click(object sender, RoutedEventArgs e)
         {
-            if (cbRevertEngish.IsChecked.Value && tm.TestLanguage==TestManager.Language.ES)
+            if (cbRevertEngish.IsChecked.Value && _tm.TestLanguage==TestManager.Language.ES)
             {
-                tm.SwitchLanguage();
+                _tm.SwitchLanguage();
             }
 
-            var q = tm.NextQuestion();
+            var q = _tm.NextQuestion();
             if (null == q)
-                tm.ResetTest();
+                _tm.ResetTest();
 
             Update(q);
         }
 
         private void btnLanguage_Click(object sender, RoutedEventArgs e)
         {
-            tm.SwitchLanguage();
-            btnLanguage.Content = tm.TestLanguage.ToString();
+            _tm.SwitchLanguage();
+            btnLanguage.Content = _tm.TestLanguage.ToString();
 
-            Update(tm.CurrentQuestion());
+            Update(_tm.CurrentQuestion());
 
     
         }
@@ -201,6 +219,17 @@ namespace SpanishTest
         {
 
 
+            if (_tm.SelectedVerb!= null)
+            {
+
+                Conjugation dlg = new Conjugation(_tm.SelectedVerb)
+                {
+                    Owner = this,
+                    WindowStartupLocation = WindowStartupLocation.CenterOwner
+                };
+
+                dlg.ShowDialog();
+            }
         }
 
         private void Window_KeyUp(object sender, KeyEventArgs e)
@@ -268,7 +297,7 @@ namespace SpanishTest
             if (!String.IsNullOrEmpty(tbDefinition.Text))
             {
                 //Add entry and save to vocab
-                Word.Factory(String.Format("{0}~{1}", tbLookup.Text, tbDefinition.Text), false, true, tm.VocabFolder);
+                Word.Factory(String.Format("{0}~{1}", tbLookup.Text, tbDefinition.Text), false, true, _tm.VocabFolder);
                 EscapeAddWordMode();
             }
         }

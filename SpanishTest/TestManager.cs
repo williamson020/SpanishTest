@@ -20,7 +20,7 @@ namespace SpanishTest
 
         public enum Mode { NamedVerbPhrases, AllVerbPhrases, FileSourcePhrases, RandomPhrases, TranslationSource }
 
-        private Verb _selectedVerb = null;
+        public Verb SelectedVerb { get; private set; }
         private string _selectedFileSource = null;
         private string _selectedTranslationSource = null;
         private string DataFolder { get; set; }
@@ -32,7 +32,10 @@ namespace SpanishTest
 
         public Language TestLanguage { get; private set; }
 
-
+        public MainWindow MainWnd
+        {
+            get { return _main; }
+        }
        
         private IEnumerator<TestQuestion> _iter;
 
@@ -57,6 +60,8 @@ namespace SpanishTest
             LoadPhrases(DataFolder + @"\Phrases");
 
             LoadVocab(VocabFolder);
+
+            VerbFavourites.Init();
 
         }
 
@@ -151,7 +156,7 @@ namespace SpanishTest
                     case Mode.FileSourcePhrases:
                         return "Phrsases from " + _selectedFileSource;
                     case Mode.NamedVerbPhrases:
-                        return "Verb Usage Phrases from " + _selectedVerb.Infinitive;
+                        return "Verb Usage Phrases from " + SelectedVerb.Infinitive;
                     case Mode.RandomPhrases:
                         return "Random Phrase";
                     case Mode.TranslationSource:
@@ -285,7 +290,7 @@ namespace SpanishTest
             switch (m)
             {
                 case Mode.AllVerbPhrases:
-                    _selectedVerb = null;
+                    SelectedVerb = null;
                     GenerateVerbPhraseQuestions();
                     break;
                 case Mode.FileSourcePhrases:
@@ -295,7 +300,7 @@ namespace SpanishTest
                     GenerateFilePhrasesQuestions();
                     break;
                 case Mode.NamedVerbPhrases:
-                    _selectedVerb = namedVerb; 
+                    SelectedVerb = namedVerb; 
                     if (namedVerb == null)
                         throw new ArgumentException("Named verb cannot be null in this mode");
                     GenerateVerbPhraseQuestions();
@@ -352,13 +357,13 @@ namespace SpanishTest
         {
             var lst = new List<Phrase>();
 
-            if (_selectedVerb == null)
+            if (SelectedVerb == null)
             {
                 foreach (var verb in Verb.Verbs)
                     verb.AppendPhrases(lst);
             }
             else
-                _selectedVerb.AppendPhrases(lst);
+                SelectedVerb.AppendPhrases(lst);
 
             GenerateVerbPhraseQuestions(lst);
         }

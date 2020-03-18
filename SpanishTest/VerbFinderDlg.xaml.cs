@@ -126,7 +126,6 @@ namespace SpanishTest
             if (Selection != null)
             {
 
-
                 Conjugation dlg = new Conjugation(Selection)
                 {
                     Owner = this,

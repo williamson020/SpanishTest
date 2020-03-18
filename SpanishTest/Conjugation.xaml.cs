@@ -22,17 +22,22 @@ namespace SpanishTest
     {
         private VerbTableEntry _master;
 
+        public enum Tense { Present, Preterite, Imperfect, Conditional, Future}
+
+        private string[] _items = new string[5];
+
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public VerbTableEntry(string person, string pr, string im, string pret, string cond, string fut, bool createcopy=false)
         {
             Person = person;
 
-            Present = pr;
-            Imperfect = im;
-            Preterite = pret;
-            Conditional = cond;
-            Future = fut;
+            _items[0] = pr;
+            _items[1] = pret;
+            _items[2] = im;
+            _items[3] = cond;
+            _items[4] = fut;
 
             SetFlags();
 
@@ -49,7 +54,7 @@ namespace SpanishTest
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private  bool Match(string s1, string s2)
+        private static bool Match(string s1, string s2)
         {
             return (String.Compare(s1, s2, CultureInfo.CurrentCulture, CompareOptions.IgnoreNonSpace) == 0);
         }
@@ -81,12 +86,33 @@ namespace SpanishTest
         }
 
         public string Person{ get;  set; }
-        public string Present { get;  set; }
-        public string Preterite { get;  set; }
-        public string Imperfect { get;  set; }
+        public string Present
+        {
+            get { return _items[0]; }
+            set { _items[0] = value; }
+        }
 
-        public string Conditional { get;  set; }
-        public string Future { get;  set; }
+        public string Preterite
+        {
+            get { return _items[1]; }
+            set { _items[1] = value; }
+        }
+        public string Imperfect
+        {
+            get { return _items[2]; }
+            set { _items[2] = value; }
+        }
+
+        public string Conditional
+        {
+            get { return _items[3]; }
+            set { _items[3] = value; }
+        }
+        public string Future
+        {
+            get { return _items[4]; }
+            set { _items[4] = value; }
+        }
 
         public bool PresentIsRegular { get; private set; }
         public bool PreteriteIsRegular { get; private set; }
@@ -120,6 +146,43 @@ namespace SpanishTest
                 Conditional = Conditional.Substring(1);
         }
 
+        internal static Tense TenseFromColumn(int colIndex)
+        {
+            return (VerbTableEntry.Tense)colIndex;
+        }
+
+        internal string Item(Tense t)
+        {
+            return _items[(int)t];
+        }
+
+        internal void SetValue(Tense t, string s)
+        {
+            int x = (int)t;
+
+            _items[x] = s;
+
+            if (Match(_items[x], _master.Item(t)))
+                _items[x] = _master.Item(t);
+
+        }
+
+        internal void TestMode()
+        {
+            for (int i=0; i<5; i++)
+            {
+                _items[i] = "";
+            }
+        }
+
+        internal void Reset()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                _items[i] = _master.Item((Tense)i);
+            }
+        }
+
     }
     /// <summary>
     /// Interaction logic for Conjugation.xaml
@@ -129,34 +192,36 @@ namespace SpanishTest
 
         private Verb _theVerb;
 
+        private MainWindow _mainWnd;
+
         private ObservableCollection<VerbTableEntry> _tableSource;
 
         public Conjugation(Verb v)
         {
+
+
             InitializeComponent();
             _theVerb = v;
             VerbDataGrid.CellEditEnding += myDG_CellEditEnding;
+
+            
         }
 
-        protected  void OnExecutedCommitEdit(System.Windows.Input.ExecutedRoutedEventArgs e)
-        {
-        }
 
-            //protected virtual void OnExecutedCommitEdit(System.Windows.Input.ExecutedRoutedEventArgs e);
+
 
         private void myDG_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
         {
             if (e.EditAction == DataGridEditAction.Commit)
             {
-                
-
                 var column = e.Column as DataGridBoundColumn;
 
                 if (column != null)
                 {
-                    var bindingPath = (column.Binding as Binding).Path.Path;
+                    //var bindingPath = (column.Binding as Binding).Path.Path;
 
-                    //if (bindingPath == "Present")
+                    VerbTableEntry.Tense t = VerbTableEntry.TenseFromColumn(column.DisplayIndex-1);
+
                     {
                         int rowIndex = e.Row.GetIndex();
                         var el = e.EditingElement as TextBox;
@@ -166,10 +231,10 @@ namespace SpanishTest
 
                         FrameworkElement fe = e.Column.GetCellContent(e.Row);
                         VerbTableEntry item = (VerbTableEntry)fe.DataContext;
-                        item.Present = el.Text;
+                        item.SetValue(t, el.Text);
 
-                        if (!item.PresentMatch)
-                            ((TextBox)fe).Background = Brushes.PaleVioletRed;
+                        //if (!item.PresentMatch)
+                            //((TextBox)fe).Background = Brushes.PaleVioletRed;
 
                         rowIndex++;
                         if (rowIndex > 5)
@@ -178,19 +243,10 @@ namespace SpanishTest
                         //Advance to next row (same column)
                         
                         VerbDataGrid.SelectedCells.Clear();
-                        //Set selected cell
-                        //var cInfo = new DataGridCellInfo(VerbDataGrid.Items[rowIndex], VerbDataGrid.Columns[column.DisplayIndex]);
-                        //VerbDataGrid.SelectedCells.Add(cInfo);
 
-                        //Set keyboard focus to same
-                       
-                        //Keyboard.Focus(cell);
 
-                        VerbDataGrid.ItemsSource = null;
-
-                        VerbDataGrid.ItemsSource = _tableSource
-                        ;
-                        //VerbDataGrid.Dispatcher.BeginInvoke(new Action(() => VerbDataGrid.Items.Refresh()), System.Windows.Threading.DispatcherPriority.Background);
+                        //In order to invoke the cell colour style triggers - null out and reset the DG item source // frig!!
+                        FlashGrid();
 
                         DataGridCell cell = DGUtil.GetCell(VerbDataGrid, rowIndex, column.DisplayIndex);
                         if (cell != null)
@@ -207,16 +263,25 @@ namespace SpanishTest
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _tableSource = LoadTable();
+            SetVerb(_theVerb);
+        }
 
-            VerbDataGrid.ItemsSource = _tableSource;
 
-            //Keyboard.Focus(GetDataGridCell(VerbDataGrid.SelectedCells[0]));
+        private void SetVerb(Verb v)
+        {
+            _theVerb = v;
+            _tableSource = LoadTable(_theVerb);
 
+            tbGerund.Text = _theVerb.Gerund;
+            tbPastParticiple.Text = _theVerb.PastParticiple;
+
+            tbInfinitive.Text = _theVerb.Infinitive;
+            tbDefinition.Text = _theVerb.Translation;
+            FlashGrid();
         }
 
         
-
+        /*
         private DataGridCell GetDataGridCell(DataGridCellInfo cellInfo)
         {
             var cellContent = cellInfo.Column.GetCellContent(cellInfo.Item);
@@ -225,14 +290,9 @@ namespace SpanishTest
                 return ((DataGridCell)cellContent.Parent);
 
             return (null);
-        }
+        }*/
 
-
-        
-
-       
-
-        private ObservableCollection<VerbTableEntry> LoadTable()
+        private static ObservableCollection<VerbTableEntry> LoadTable(Verb v)
         {
             //Present
             //Preterite
@@ -240,33 +300,31 @@ namespace SpanishTest
             //Conditional
             //Future
 
-            _theVerb.Lookup(Verb.Mode.Indicativo, Verb.Tense.Presente);
+            v.Lookup(Verb.Mode.Indicativo, Verb.Tense.Presente);
 
 
             var lst = new ObservableCollection<VerbTableEntry>
             {
-                MakeEntry("yo", 0),
-                MakeEntry("tú", 1),
-                MakeEntry("él/ella/Ud.", 2),
+                MakeEntry(v, "yo", 0),
+                MakeEntry(v, "tú", 1),
+                MakeEntry(v, "él/ella/Ud.", 2),
 
-                MakeEntry("nosotros", 3),
-                MakeEntry("nosotros", 4),
-                MakeEntry("éllos/ellas/Uds.", 5)
+                MakeEntry(v, "nosotros", 3),
+                MakeEntry(v, "nosotros", 4),
+                MakeEntry(v, "éllos/ellas/Uds.", 5)
             };
 
 
             return lst;
         }
 
-        private VerbTableEntry MakeEntry(string person, int index)
+        private static VerbTableEntry MakeEntry(Verb v, string person, int index)
         {
-            var pr =  _theVerb.Lookup(Verb.Mode.Indicativo, Verb.Tense.Presente)[index];
-            var im = _theVerb.Lookup(Verb.Mode.Indicativo, Verb.Tense.Imperfecto)[index];
-            var pret = _theVerb.Lookup(Verb.Mode.Indicativo, Verb.Tense.Pretérito)[index];
-            var cond = _theVerb.Lookup(Verb.Mode.Indicativo, Verb.Tense.Condicional)[index];
-            var fut= _theVerb.Lookup(Verb.Mode.Indicativo, Verb.Tense.Futuro)[index];
-
-            
+            var pr =  v.Lookup(Verb.Mode.Indicativo, Verb.Tense.Presente)[index];
+            var im = v.Lookup(Verb.Mode.Indicativo, Verb.Tense.Imperfecto)[index];
+            var pret = v.Lookup(Verb.Mode.Indicativo, Verb.Tense.Pretérito)[index];
+            var cond = v.Lookup(Verb.Mode.Indicativo, Verb.Tense.Condicional)[index];
+            var fut= v.Lookup(Verb.Mode.Indicativo, Verb.Tense.Futuro)[index];
 
             return new VerbTableEntry(person, pr, im, pret,cond,fut,true); //creates a master copy
         }
@@ -274,6 +332,47 @@ namespace SpanishTest
         private void btnDone_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void FlashGrid()
+        {
+            VerbDataGrid.ItemsSource = null;
+            VerbDataGrid.ItemsSource = _tableSource;
+        }
+
+        private void btnReset_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (VerbTableEntry vte in _tableSource)
+                vte.Reset();
+
+            FlashGrid();
+        }
+
+        private void btnTestMode_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (VerbTableEntry vte in _tableSource)
+                vte.TestMode();
+
+            FlashGrid();
+        }
+
+        private void btnNext_Click(object sender, RoutedEventArgs e)
+        {
+
+            var v = VerbFavourites.Instance.Next(_theVerb);
+
+            if (null != v)
+                SetVerb(v);
+
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            var v = VerbFavourites.Instance.Prev(_theVerb);
+
+            if (null != v)
+                SetVerb(v);
+
         }
     }
 }

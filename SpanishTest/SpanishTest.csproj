@@ -74,6 +74,7 @@
     <Compile Include="Verb.cs" />
     <Compile Include="VerbDefinition.cs" />
     <Compile Include="DocumentSection.cs" />
+    <Compile Include="VerbFavourites.cs" />
     <Compile Include="VerbFinderDlg.xaml.cs">
       <DependentUpon>VerbFinderDlg.xaml</DependentUpon>
     </Compile>

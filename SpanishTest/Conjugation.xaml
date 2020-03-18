@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpanishTest"
         mc:Ignorable="d"
-        Title="Conjugation" Height="450" Width="888" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Title="Conjugation" Height="501.4" Width="888" ResizeMode="NoResize" Loaded="Window_Loaded">
 
     <Window.Resources>
+
         <Style TargetType="DataGridCell" x:Key="PresentCellStyle">
             <Setter Property="Foreground" Value="Black"/>
             <Style.Triggers>
@@ -18,48 +19,103 @@
                     <Setter Property="Foreground" Value="Red"/>
                 </DataTrigger>
                 <DataTrigger Binding="{Binding PresentMatch}" Value="False">
-                    <Setter Property="Background" Value="Gray"/>
+                    <Setter Property="Background" Value="LightGray"/>
                 </DataTrigger>
                 <DataTrigger Binding="{Binding PresentMatch}" Value="True">
                     <Setter Property="Background" Value="LightYellow"/>
                 </DataTrigger>
             </Style.Triggers>
         </Style>
-        <Style TargetType="TextBox" x:Key="PresentCellStyleTextBox">
+
+        <Style TargetType="DataGridCell" x:Key="PreteriteCellStyle">
             <Setter Property="Foreground" Value="Black"/>
             <Style.Triggers>
-                <DataTrigger Binding="{Binding PresentIsRegular}" Value="True">
+                <DataTrigger Binding="{Binding PreteriteIsRegular}" Value="True">
                     <Setter Property="Foreground" Value="Black"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding PresentIsRegular}" Value="False">
+                <DataTrigger Binding="{Binding PreteriteIsRegular}" Value="False">
                     <Setter Property="Foreground" Value="Red"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding PresentMatch}" Value="False">
-                    <Setter Property="Background" Value="Gray"/>
+                <DataTrigger Binding="{Binding PreteriteMatch}" Value="False">
+                    <Setter Property="Background" Value="LightGray"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding PresentMatch}" Value="True">
+                <DataTrigger Binding="{Binding PreteriteMatch}" Value="True">
                     <Setter Property="Background" Value="LightYellow"/>
                 </DataTrigger>
             </Style.Triggers>
         </Style>
-    </Window.Resources>
-    
-    <Grid>
-        <ComboBox  Height="23" HorizontalAlignment="Left" Margin="85,10,0,0"
-                Name="Mode" VerticalAlignment="Top" Width="200"  />
 
-        <DataGrid FontFamily="Georgia" FontSize="18" Height="250" Width="800" HorizontalAlignment="Left" Margin="12,50,0,0" 
+        <Style TargetType="DataGridCell" x:Key="ImperfectCellStyle">
+            <Setter Property="Foreground" Value="Black"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ImperfectIsRegular}" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ImperfectIsRegular}" Value="False">
+                    <Setter Property="Foreground" Value="Red"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ImperfectMatch}" Value="False">
+                    <Setter Property="Background" Value="LightGray"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ImperfectMatch}" Value="True">
+                    <Setter Property="Background" Value="LightYellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="DataGridCell" x:Key="ConditionalCellStyle">
+            <Setter Property="Foreground" Value="Black"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ConditionalIsRegular}" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ConditionalIsRegular}" Value="False">
+                    <Setter Property="Foreground" Value="Red"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ConditionalMatch}" Value="False">
+                    <Setter Property="Background" Value="LightGray"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding ConditionalMatch}" Value="True">
+                    <Setter Property="Background" Value="LightYellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="DataGridCell" x:Key="FutureCellStyle">
+            <Setter Property="Foreground" Value="Black"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding FutureIsRegular}" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding FutureIsRegular}" Value="False">
+                    <Setter Property="Foreground" Value="Red"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding FutureMatch}" Value="False">
+                    <Setter Property="Background" Value="LightGray"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding FutureMatch}" Value="True">
+                    <Setter Property="Background" Value="LightYellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="0,0,53.6,0">
+        <ComboBox  Height="23" HorizontalAlignment="Left" Margin="100,114,0,0" Name="Mode" VerticalAlignment="Top" Width="200"  />
+
+
+        <DataGrid FontFamily="Georgia" FontSize="18" Height="250" Width="800" HorizontalAlignment="Left" Margin="15,157,0,0" 
           Name="VerbDataGrid" VerticalAlignment="Top" RowHeight="25"  ColumnWidth="100" 
                   ColumnHeaderHeight="50" HeadersVisibility="Column"
                   Background="LightYellow" RowBackground="LightYellow" SelectionUnit="Cell" IsSynchronizedWithCurrentItem="True"
                   BorderBrush="Gray" BorderThickness="1" AutoGenerateColumns="False"
                   >
 
-
             <DataGrid.Columns>
-
                 <DataGridTextColumn 
                 Header=""
+                IsReadOnly="True"
                 Width="150"
                 Binding="{Binding Person}" >
                     <DataGridTextColumn.ElementStyle>
@@ -67,98 +123,88 @@
                             <Setter Property="TextWrapping" Value="Wrap"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
-                    
+
                 </DataGridTextColumn>
 
                 <DataGridTextColumn 
                 Header="Present"
                 Width="130"
-                
                 CellStyle="{StaticResource PresentCellStyle}"
-                Binding="{Binding Present, Mode=TwoWay}" >
+                Binding="{Binding Present}" >
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextWrapping" Value="Wrap"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
-                   
+
                 </DataGridTextColumn>
 
 
                 <DataGridTextColumn 
                 Header="Preterite"
                 Width="130"
+                CellStyle="{StaticResource PreteriteCellStyle}"
                 Binding="{Binding Preterite}" >
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextWrapping" Value="Wrap"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
-                    <DataGridTextColumn.EditingElementStyle>
-                        <Style TargetType="TextBox">
-                            <Setter Property="Foreground" Value="Blue"/>
-                        </Style>
-                    </DataGridTextColumn.EditingElementStyle>
                 </DataGridTextColumn>
 
 
                 <DataGridTextColumn 
                 Header="Imperfect"
                 Width="130"
+                CellStyle="{StaticResource ImperfectCellStyle}"
                 Binding="{Binding Imperfect}" >
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextWrapping" Value="Wrap"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
-                    <DataGridTextColumn.EditingElementStyle>
-                        <Style TargetType="TextBox">
-                            <Setter Property="Foreground" Value="Blue"/>
-                        </Style>
-                    </DataGridTextColumn.EditingElementStyle>
                 </DataGridTextColumn>
 
                 <DataGridTextColumn 
                 Header="Conditional"
                 Width="130"
+                CellStyle="{StaticResource ConditionalCellStyle}"
                 Binding="{Binding Conditional}" >
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextWrapping" Value="Wrap"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
-                    <DataGridTextColumn.EditingElementStyle>
-                        <Style TargetType="TextBox">
-                            <Setter Property="Foreground" Value="Blue"/>
-                        </Style>
-                    </DataGridTextColumn.EditingElementStyle>
                 </DataGridTextColumn>
-                
+
                 <DataGridTextColumn 
                 Header="Future"
                 Width="130"
+                CellStyle="{StaticResource FutureCellStyle}"
                 Binding="{Binding Future}" >
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextWrapping" Value="Wrap"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
-                    <DataGridTextColumn.EditingElementStyle>
-                        <Style TargetType="TextBox">
-                            <Setter Property="Foreground" Value="Blue"/>
-                        </Style>
-                    </DataGridTextColumn.EditingElementStyle>
                 </DataGridTextColumn>
-
-
-
-
             </DataGrid.Columns>
 
 
         </DataGrid>
-        <Button Content="Done" Height="23" HorizontalAlignment="Left" Margin="624,322,0,0"
-                Name="btnDone" VerticalAlignment="Top" Width="116" Click="btnDone_Click" />
-        <TextBlock HorizontalAlignment="Left" Margin="35,15,0,0" TextWrapping="Wrap" Text="Mode" VerticalAlignment="Top"/>
+        <Button Content="Done" Height="23" HorizontalAlignment="Left" Margin="725,429,0,0"
+                Name="btnDone" VerticalAlignment="Top" Width="86" Click="btnDone_Click" />
+        <TextBlock HorizontalAlignment="Left" Margin="15,117,0,0" TextWrapping="Wrap" Text="Mode" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425"/>
+        <Button Content="Test Mode" Click="btnTestMode_Click" Name="btnTestMode" HorizontalAlignment="Left" Margin="25,427,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="15,64,0,0" TextWrapping="Wrap" Text="Past Participle" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425"/>
+        <TextBlock HorizontalAlignment="Left" Margin="310,63,0,0" TextWrapping="Wrap" Text="Gerund" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425"/>
+        <TextBlock FontFamily="Georgia" FontSize="18" Name="tbPastParticiple" HorizontalAlignment="Left" Margin="100,62,0,0" TextWrapping="Wrap" Text="HERE" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425" Width="175"/>
+        <TextBlock x:Name="tbGerund" FontFamily="Georgia" FontSize="18" HorizontalAlignment="Left" Margin="365,62,0,0" TextWrapping="Wrap" Text="HERE" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425" Width="175"/>
+        <Button Content="Reset" x:Name="btnReset" Click="btnReset_Click" HorizontalAlignment="Left" Margin="115,428,0,0" VerticalAlignment="Top" Width="75" Height="24"/>
+        <Button Content="Next" x:Name="btnNext" Click="btnNext_Click"  HorizontalAlignment="Left" Margin="210,427,0,0" VerticalAlignment="Top" Width="75" Height="24"/>
+        <Button Content="Back" x:Name="btnBack" Click="btnBack_Click"  HorizontalAlignment="Left" Margin="305,428,0,0" VerticalAlignment="Top" Width="75" Height="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,19,0,0" TextWrapping="Wrap" Text="Infinitive" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425"/>
+        <TextBlock FontFamily="Georgia" FontSize="18" x:Name="tbInfinitive" HorizontalAlignment="Left" Margin="100,19,0,0" TextWrapping="Wrap" Text="HERE" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425" Width="175"/>
+        <TextBlock FontFamily="Georgia" FontSize="18" x:Name="tbDefinition" HorizontalAlignment="Left" Margin="315,19,0,0" TextWrapping="Wrap" Text="HERE" VerticalAlignment="Top" RenderTransformOrigin="0.314,3.425" Width="175"/>
     </Grid>
 </Window>
